@@ -1,5 +1,7 @@
 {
     "service_name": "",
+    "ip_address":"0.0.0.0",
+    "port":"5001",
     "gpu_id":["0"],
     "gpu_memory_size":0,
     "max_infer_batch_size":0,

@@ -1,5 +1,6 @@
 weights/*.hdf5
-custom/
+custom/custom_model.py
 config/config.json
 __pycache__/
+test/test_post.py
 record.log
