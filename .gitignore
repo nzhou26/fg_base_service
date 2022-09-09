@@ -1,0 +1,6 @@
+weights/
+warmup_data/
+custom/
+config/config.json
+__pycache__/
+record.log
