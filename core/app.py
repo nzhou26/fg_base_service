@@ -52,7 +52,7 @@ class ModelTask(Resource):
             return {'error': 'Internal error'}, 500
         return {'result': postprocess_result}
 
-api.add_resource(ModelTask, f'/{configs["service_name"]}')
+api.add_resource(ModelTask, '/')
 
 
 if __name__ == '__main__':

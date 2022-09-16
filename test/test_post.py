@@ -31,7 +31,7 @@ def single_post(data, url, timeout=5):
         print('single post test failed')
 
     
-def multi_post(data, url, num_thread=6, timeout=5):
+def multi_post(data, url, num_thread=64, timeout=5):
     threads = []
     for i in range(num_thread):
         threads.append(threading.Thread(target=single_post, args=(data, url, timeout)))
@@ -41,10 +41,10 @@ def multi_post(data, url, num_thread=6, timeout=5):
         t.join()
     
 if __name__ =="__main__":
-    url = 'http://127.0.0.1:5000/steel_seg'
+    url = 'http://127.0.0.1:5001/'
     single_post_data = [
         "/storage/unload_ratio/new_data/full_images/皖KV3551_20220607/皖KV3551_20220607124459.jpg",
-    ]*6
-    single_post(data=single_post_data, url=url, timeout=10)
+    ]*1
+    #single_post(data=single_post_data, url=url, timeout=10)
     multi_post(data=single_post_data, url=url, timeout=20)
     
